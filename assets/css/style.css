@@ -111,7 +111,7 @@ a {
 .section-kicker,
 .project-label,
 .skill-title,
-.timeline-title {
+.projects-subtitle {
     font-family: "Unbounded", "Segoe UI", sans-serif;
 }
 
@@ -236,7 +236,6 @@ h3 {
 
 .hero-text,
 .project-card p,
-.timeline-item p:last-child,
 .contact-card h2 {
     color: var(--muted);
     line-height: 1.7;
@@ -270,7 +269,7 @@ h3 {
 .button::before,
 .simple-link::before,
 .project-card a::before,
-.contact-links a::before {
+.contact-item::before {
     content: "";
     position: absolute;
     inset: -1px;
@@ -296,7 +295,7 @@ h3 {
 .button:hover,
 .simple-link:hover,
 .project-card a:hover,
-.contact-links a:hover {
+.contact-item:hover {
     color: #f8fbff;
     border-color: rgba(100, 210, 255, 0.35);
     background: rgba(100, 210, 255, 0.08);
@@ -307,7 +306,7 @@ h3 {
 .button:hover::before,
 .simple-link:hover::before,
 .project-card a:hover::before,
-.contact-links a:hover::before {
+.contact-item:hover::before {
     opacity: 1;
 }
 
@@ -329,9 +328,19 @@ h3 {
     gap: 10px;
 }
 
+.project-tags,
+.stack-list {
+    margin: 0;
+    padding: 0;
+}
+
 .hero-tags {
     grid-column: 1 / -1;
+    justify-content: flex-start;
+    align-self: start;
     margin-top: 4px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .hero-tags span,
@@ -342,6 +351,14 @@ h3 {
     border-radius: 999px;
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.04);
+}
+
+.project-tags li {
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .simple-link {
@@ -369,7 +386,7 @@ main {
 .split-heading {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: start;
     gap: 20px;
 }
 
@@ -382,6 +399,19 @@ main {
 
 .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projects-subsection {
+    margin: 18px 0 12px;
+}
+
+.projects-subtitle {
+    margin: 0;
+    color: var(--accent);
+    font-family: "Unbounded", "Segoe UI", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .certificates-grid {
@@ -397,8 +427,7 @@ main {
 }
 
 .certificate-label,
-.skill-title,
-.timeline-title {
+.skill-title {
     margin-bottom: 8px;
     font-size: 0.88rem;
 }
@@ -415,6 +444,13 @@ main {
     gap: 8px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
 .project-card.highlight {
     background:
         linear-gradient(135deg, rgba(100, 210, 255, 0.12), rgba(255, 255, 255, 0.03)),
@@ -422,7 +458,7 @@ main {
 }
 
 .project-card a,
-.contact-links a,
+.contact-item,
 .simple-link {
     position: relative;
     display: inline-flex;
@@ -436,43 +472,12 @@ main {
     font-weight: 600;
 }
 
-.timeline {
-    display: grid;
-    gap: 14px;
-    margin-bottom: 14px;
-}
-
-.timeline-item {
-    display: grid;
-    grid-template-columns: 20px 1fr;
-    gap: 14px;
-    align-items: start;
-}
-
-.timeline-marker {
-    width: 14px;
-    height: 14px;
-    margin-top: 7px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 0 6px rgba(100, 210, 255, 0.12);
-}
-
-.background-note,
-.contact-links {
-    color: var(--muted);
-    line-height: 1.7;
-}
-
 .skills-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .contact-card {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: end;
+    display: block;
     padding: 22px;
     border-radius: 28px;
     background:
@@ -480,9 +485,51 @@ main {
         rgba(18, 28, 40, 0.92);
 }
 
-.contact-card h2 {
-    max-width: 18ch;
-    margin-bottom: 0;
+.site-footer {
+    margin-top: 22px;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: rgba(12, 18, 27, 0.88);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.footer-heading {
+    margin-bottom: 12px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+}
+
+.contact-item {
+    width: 100%;
+    min-height: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 14px;
+    border-radius: 999px;
+}
+
+.contact-label {
+    margin-bottom: 2px;
+    color: var(--accent);
+    font-family: "Unbounded", "Segoe UI", sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    color: var(--ink);
+    line-height: 1.35;
+    font-size: 0.88rem;
+    word-break: break-word;
 }
 
 @media (max-width: 980px) {
@@ -490,9 +537,8 @@ main {
     .projects-grid,
     .certificates-grid,
     .skills-columns,
-    .contact-card {
+    .contact-grid {
         grid-template-columns: 1fr;
-        flex-direction: column;
     }
 
     .split-heading {
@@ -500,9 +546,6 @@ main {
         flex-direction: column;
     }
 
-    .contact-links {
-        width: 100%;
-    }
 }
 
 @media (max-width: 640px) {
