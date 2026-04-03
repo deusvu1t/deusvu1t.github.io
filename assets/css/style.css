@@ -67,8 +67,8 @@ a {
 
 .hero,
 .section,
-.contact-card,
 .project-card,
+.certificate-card,
 .skill-box {
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
@@ -154,8 +154,8 @@ a {
 .nav-links a:hover,
 .simple-link:hover,
 .project-card a:hover,
-.contact-links a:hover,
-.button:hover {
+.button:hover,
+.contact-item:hover {
     color: var(--accent-strong);
 }
 
@@ -236,7 +236,7 @@ h3 {
 
 .hero-text,
 .project-card p,
-.contact-card h2 {
+.certificate-card p {
     color: var(--muted);
     line-height: 1.7;
 }
@@ -422,6 +422,7 @@ main {
 .certificate-card,
 .skill-box {
     padding: 18px;
+    min-height: 100%;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.03);
 }
@@ -439,6 +440,12 @@ main {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.certificate-card {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -474,15 +481,6 @@ main {
 
 .skills-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.contact-card {
-    display: block;
-    padding: 22px;
-    border-radius: 28px;
-    background:
-        linear-gradient(135deg, rgba(100, 210, 255, 0.12), rgba(80, 105, 180, 0.1)),
-        rgba(18, 28, 40, 0.92);
 }
 
 .site-footer {
@@ -556,15 +554,14 @@ main {
 
     .hero,
     .section,
-    .contact-card,
     .project-card,
+    .certificate-card,
     .skill-box {
         border-radius: 22px;
     }
 
     .hero,
-    .section,
-    .contact-card {
+    .section {
         padding: 20px;
     }
 
@@ -581,8 +578,7 @@ main {
     }
 
     h1,
-    h2,
-    .contact-card h2 {
+    h2 {
         max-width: none;
     }
 
