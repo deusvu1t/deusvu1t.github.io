@@ -1,15 +1,15 @@
 :root {
-    --bg: #f4efe6;
-    --bg-alt: #fffaf2;
-    --surface: rgba(255, 251, 243, 0.76);
-    --surface-strong: #fff9ef;
-    --ink: #1f1d1a;
-    --muted: #5f5a53;
-    --line: rgba(31, 29, 26, 0.1);
-    --accent: #de5b31;
-    --accent-strong: #c94820;
-    --accent-soft: #f3d9b2;
-    --shadow: 0 20px 60px rgba(78, 49, 20, 0.12);
+    --bg: #0c121b;
+    --bg-alt: #101925;
+    --surface: rgba(18, 28, 40, 0.82);
+    --surface-strong: #162131;
+    --ink: #eef3fb;
+    --muted: #9aa8bc;
+    --line: rgba(255, 255, 255, 0.1);
+    --accent: #64d2ff;
+    --accent-strong: #3fb7e7;
+    --accent-soft: #1f3145;
+    --shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
 }
 
 * {
@@ -25,17 +25,17 @@ body {
     color: var(--ink);
     font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
     background:
-        radial-gradient(circle at 15% 20%, rgba(222, 91, 49, 0.14), transparent 24%),
-        radial-gradient(circle at 80% 10%, rgba(232, 190, 99, 0.16), transparent 20%),
-        linear-gradient(180deg, #f8f2e8 0%, #f2e8db 100%);
+        radial-gradient(circle at 15% 20%, rgba(100, 210, 255, 0.16), transparent 24%),
+        radial-gradient(circle at 80% 10%, rgba(78, 120, 255, 0.14), transparent 20%),
+        linear-gradient(180deg, #0b1118 0%, #0f1823 100%);
 }
 
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 22px 22px;
     pointer-events: none;
     opacity: 0.35;
@@ -80,7 +80,7 @@ a {
     scroll-margin-top: 110px;
     padding: 24px;
     border-radius: 34px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 247, 236, 0.92));
+    background: linear-gradient(135deg, rgba(18, 28, 40, 0.92), rgba(13, 21, 32, 0.96));
 }
 
 .topbar {
@@ -98,9 +98,9 @@ a {
     padding-right: 16px;
     border-bottom: 1px solid var(--line);
     border-radius: 24px;
-    background: rgba(255, 248, 239, 0.9);
+    background: rgba(12, 18, 27, 0.88);
     backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(78, 49, 20, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 .brand-block {
@@ -152,7 +152,7 @@ a {
     padding: 0 14px;
     border: 1px solid var(--line);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(255, 255, 255, 0.04);
     font-size: 0.95rem;
     font-weight: 500;
 }
@@ -250,7 +250,7 @@ h3 {
 }
 
 .button-secondary {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .hero-tags,
@@ -268,14 +268,14 @@ h3 {
     padding: 10px 14px;
     border-radius: 999px;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .hero-panel {
     padding: 20px;
     border-radius: 26px;
     background:
-        linear-gradient(180deg, rgba(222, 91, 49, 0.12), rgba(255, 255, 255, 0.75)),
+        linear-gradient(180deg, rgba(100, 210, 255, 0.12), rgba(18, 28, 40, 0.92)),
         var(--surface-strong);
 }
 
@@ -312,7 +312,7 @@ main {
     scroll-margin-top: 110px;
     padding: 22px;
     border-radius: 32px;
-    background: rgba(255, 250, 242, 0.84);
+    background: rgba(13, 21, 32, 0.88);
 }
 
 .section-heading {
@@ -346,7 +346,7 @@ main {
 .skill-box {
     padding: 18px;
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.62);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .feature-title,
@@ -364,8 +364,8 @@ main {
 
 .project-card.highlight {
     background:
-        linear-gradient(135deg, rgba(243, 217, 178, 0.9), rgba(255, 255, 255, 0.82)),
-        #fff;
+        linear-gradient(135deg, rgba(100, 210, 255, 0.12), rgba(255, 255, 255, 0.03)),
+        #132030;
 }
 
 .project-card a,
@@ -393,7 +393,7 @@ main {
     margin-top: 7px;
     border-radius: 50%;
     background: var(--accent);
-    box-shadow: 0 0 0 6px rgba(222, 91, 49, 0.14);
+    box-shadow: 0 0 0 6px rgba(100, 210, 255, 0.12);
 }
 
 .background-note,
@@ -414,8 +414,8 @@ main {
     padding: 22px;
     border-radius: 28px;
     background:
-        linear-gradient(135deg, rgba(222, 91, 49, 0.11), rgba(243, 217, 178, 0.52)),
-        rgba(255, 251, 244, 0.9);
+        linear-gradient(135deg, rgba(100, 210, 255, 0.12), rgba(80, 105, 180, 0.1)),
+        rgba(18, 28, 40, 0.92);
 }
 
 .contact-card h2 {
