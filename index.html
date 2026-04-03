@@ -3,136 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Портфолио Юрия, QA Engineer: manual testing, API/UI automation, Python, Playwright, Pytest.">
-    <title>Юрий | QA Engineer</title>
+    <meta name="description" content="Портфолио Юрия Гришанова: Junior QA Engineer, manual testing, API/UI automation, Python, Playwright, Pytest.">
+    <title>Юрий Гришанов | Junior QA Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="noise"></div>
 <div class="page-shell">
-    <header class="hero">
+    <header class="hero" id="top">
         <nav class="topbar">
-            <a class="brand" href="#top">Yuri QA</a>
+            <a class="brand" href="#top">YURI GRISHANOV</a>
             <div class="nav-links">
-                <a href="#about">Обо мне</a>
                 <a href="#projects">Проекты</a>
-                <a href="#stack">Стек</a>
+                <a href="#background">Опыт и обучение</a>
+                <a href="#skills">Навыки</a>
                 <a href="#contact">Контакты</a>
             </div>
         </nav>
 
-        <div class="hero-grid" id="top">
+        <div class="hero-layout">
             <div class="hero-copy">
-                <p class="eyebrow">QA ENGINEER PORTFOLIO</p>
-                <h1>Тестирую продукт так, чтобы релизы проходили спокойнее.</h1>
+                <p class="eyebrow">JUNIOR QA ENGINEER</p>
+                <h1>QA Engineer с упором на ручное тестирование и Python-автоматизацию.</h1>
                 <p class="hero-text">
-                    Я QA Engineer с фокусом на ручное тестирование, API/UI автотесты и понятные
-                    процессы проверки качества. Работаю с Python, Pytest, Playwright и Postman.
+                    UI и API проверки, pet-проекты, учебные Python-репозитории и дипломный Telegram-бот.
                 </p>
+
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#projects">Смотреть проекты</a>
-                    <a class="button button-secondary" href="mailto:your@email.com">Написать мне</a>
+                    <a class="button button-primary" href="#projects">Посмотреть проекты</a>
+                    <a class="button button-secondary" href="#contact">Связаться со мной</a>
+                </div>
+
+                <div class="hero-tags">
+                    <span>Manual testing</span>
+                    <span>API / UI</span>
+                    <span>Python</span>
+                    <span>Pytest</span>
+                    <span>Playwright</span>
+                    <span>GitHub Pages</span>
                 </div>
             </div>
 
-            <aside class="hero-card">
-                <p class="card-label">Текущий фокус</p>
-                <ul class="focus-list">
-                    <li>UI и API автотесты</li>
-                    <li>Регресс, smoke, чек-листы</li>
-                    <li>Python + Playwright + Pytest</li>
-                </ul>
-                <div class="stats">
-                    <div>
-                        <span class="stat-value">Manual</span>
-                        <span class="stat-label">Web / API testing</span>
-                    </div>
-                    <div>
-                        <span class="stat-value">AQA</span>
-                        <span class="stat-label">Pytest / Playwright</span>
-                    </div>
+            <aside class="hero-panel">
+                <div class="metric">
+                    <span class="metric-value">5</span>
+                    <span class="metric-label">Pet-проектов на GitHub</span>
                 </div>
+                <div class="metric">
+                    <span class="metric-value">Skillbox</span>
+                    <span class="metric-label">QA и Python coursework</span>
+                </div>
+                <p class="panel-note">
+                    Фокус: понятная тестовая документация, воспроизводимые баг-репорты и автоматизация
+                    критических сценариев.
+                </p>
             </aside>
         </div>
     </header>
 
     <main>
-        <section class="section" id="about">
+        <section class="section intro-section">
             <div class="section-heading">
-                <p class="section-kicker">Обо мне</p>
-                <h2>Качество для меня это не формальность, а предсказуемый результат.</h2>
+                <p class="section-kicker">Позиционирование</p>
+                <h2>Портфолио на основе практики, а не общих формулировок.</h2>
             </div>
-            <div class="about-grid">
-                <article class="panel">
-                    <p>
-                        Ищу и описываю дефекты так, чтобы разработчику было легко воспроизвести проблему,
-                        а команде было понятно ее влияние на продукт.
-                    </p>
+            <div class="intro-grid">
+                <article class="feature-card">
+                    <p class="feature-title">Что внутри</p>
+                    <p>Автотесты, учебные проекты, Python-задачи и дипломная работа.</p>
                 </article>
-                <article class="panel">
-                    <p>
-                        Умею писать тест-кейсы, чек-листы, проводить регресс, проверять API и автоматизировать
-                        повторяющиеся сценарии на Python.
-                    </p>
+                <article class="feature-card">
+                    <p class="feature-title">Что умею</p>
+                    <p>Ручное тестирование, API-проверки, smoke/regression checks, баг-репорты.</p>
+                </article>
+                <article class="feature-card">
+                    <p class="feature-title">Подход</p>
+                    <p>Четкие шаги, воспроизводимость багов и аккуратная тестовая документация.</p>
                 </article>
             </div>
         </section>
 
         <section class="section" id="projects">
-            <div class="section-heading">
-                <p class="section-kicker">Проекты</p>
-                <h2>Примеры того, как я оформляю и автоматизирую проверку качества.</h2>
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="section-kicker">Проекты</p>
+                    <h2>Основные проекты.</h2>
+                </div>
+                <a class="simple-link" href="https://github.com/deusvu1t" target="_blank" rel="noreferrer">Профиль GitHub</a>
             </div>
-            <div class="cards">
-                <article class="project-card">
-                    <p class="project-type">Portfolio Repo</p>
-                    <h3>QA Portfolio</h3>
-                    <p>Подборка тестовой документации, примеров баг-репортов и структуры QA-артефактов.</p>
-                    <a href="https://github.com/USERNAME/qa-portfolio" target="_blank" rel="noreferrer">Открыть GitHub</a>
+
+            <div class="projects-grid">
+                <article class="project-card highlight">
+                    <p class="project-label">QA + UI</p>
+                    <h3>Swag Labs Testing Project</h3>
+                    <p>Проверка пользовательских сценариев интернет-магазина. Демонстрация ручного тестирования и UI-подхода.</p>
+                    <ul class="project-tags">
+                        <li>UI testing</li>
+                        <li>Test scenarios</li>
+                        <li>E-commerce flows</li>
+                    </ul>
+                    <a href="https://github.com/deusvu1t/pet-project-swag-labs" target="_blank" rel="noreferrer">Открыть репозиторий</a>
                 </article>
+
                 <article class="project-card">
-                    <p class="project-type">Automation</p>
-                    <h3>API Tests on Pytest</h3>
-                    <p>Набор API-автотестов с проверкой статусов, схем ответов и негативных сценариев.</p>
-                    <a href="#">Добавить ссылку на проект</a>
+                    <p class="project-label">Automation</p>
+                    <h3>SimpleGameTests</h3>
+                    <p>Автотесты для игрового проекта с акцентом на структуру и базовые сценарии.</p>
+                    <ul class="project-tags">
+                        <li>Test automation</li>
+                        <li>Regression checks</li>
+                        <li>Project structure</li>
+                    </ul>
+                    <a href="https://github.com/deusvu1t/SimpleGameTests" target="_blank" rel="noreferrer">Открыть репозиторий</a>
                 </article>
+
                 <article class="project-card">
-                    <p class="project-type">UI Testing</p>
-                    <h3>Playwright UI Checks</h3>
-                    <p>Сценарии для smoke и critical path, которые можно запускать перед релизом.</p>
-                    <a href="#">Добавить ссылку на проект</a>
+                    <p class="project-label">Python</p>
+                    <h3>SimpleGameTestsPy</h3>
+                    <p>Версия игровых тестов на Python. Показывает язык как основной инструмент автоматизации.</p>
+                    <ul class="project-tags">
+                        <li>Python</li>
+                        <li>Automation</li>
+                        <li>Testing practice</li>
+                    </ul>
+                    <a href="https://github.com/deusvu1t/SimpleGameTestsPy" target="_blank" rel="noreferrer">Открыть репозиторий</a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-label">Coursework</p>
+                    <h3>Python Skillbox Tasks</h3>
+                    <p>Практические задания по Python-курсу от Skillbox. База по языку и учебный прогресс.</p>
+                    <ul class="project-tags">
+                        <li>Python basics</li>
+                        <li>Course tasks</li>
+                        <li>Learning track</li>
+                    </ul>
+                    <a href="https://github.com/deusvu1t/python-skillbox-tasks" target="_blank" rel="noreferrer">Открыть репозиторий</a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-label">Diploma</p>
+                    <h3>Python Telegram Bot</h3>
+                    <p>Дипломная работа с Python-курса Skillbox. Телеграм-бот с прикладной логикой.</p>
+                    <ul class="project-tags">
+                        <li>Telegram bot</li>
+                        <li>Python</li>
+                        <li>Diploma project</li>
+                    </ul>
+                    <a href="https://github.com/deusvu1t/python-telegram-bot" target="_blank" rel="noreferrer">Открыть репозиторий</a>
                 </article>
             </div>
         </section>
 
-        <section class="section" id="stack">
+        <section class="section" id="background">
             <div class="section-heading">
-                <p class="section-kicker">Стек</p>
-                <h2>Инструменты, с которыми я работаю.</h2>
+                <p class="section-kicker">Опыт и обучение</p>
+                <h2>Опыт и обучение.</h2>
             </div>
-            <div class="stack-list">
-                <span>Python</span>
-                <span>Pytest</span>
-                <span>Playwright</span>
-                <span>Selenium</span>
-                <span>Postman</span>
-                <span>DevTools</span>
-                <span>SQL basics</span>
-                <span>Git / GitHub</span>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <p class="timeline-title">QA направление</p>
+                        <p>Ручное тестирование, UI/API-проверки, тестовая документация и баг-репорты.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <p class="timeline-title">Skillbox Python coursework</p>
+                        <p>Переход от учебных задач по Python к прикладным pet-проектам и автоматизации.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <p class="timeline-title">Дипломный проект</p>
+                        <p>Telegram-бот как итоговый проект с прикладной логикой.</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="background-note">Этот блок можно усилить конкретным опытом, стеком и достижениями из резюме и HH-профиля.</p>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="section-kicker">Навыки</p>
+                <h2>Навыки и инструменты.</h2>
+            </div>
+            <div class="skills-columns">
+                <div class="skill-box">
+                    <p class="skill-title">Testing</p>
+                    <div class="stack-list">
+                        <span>Manual testing</span>
+                        <span>UI testing</span>
+                        <span>API testing</span>
+                        <span>Smoke</span>
+                        <span>Regression</span>
+                        <span>Bug reporting</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">Tools</p>
+                    <div class="stack-list">
+                        <span>Python</span>
+                        <span>Pytest</span>
+                        <span>Playwright</span>
+                        <span>Selenium</span>
+                        <span>Postman</span>
+                        <span>Git / GitHub</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="contact">
-            <div class="contact-banner">
+        <section class="section contact-section" id="contact">
+            <div class="contact-card">
                 <div>
                     <p class="section-kicker">Контакты</p>
-                    <h2>Если нужен QA для тестирования продукта или автотестов, можно связаться со мной.</h2>
+                    <h2>Открыт к QA-вакансиям и тестовым заданиям.</h2>
                 </div>
                 <div class="contact-links">
-                    <a href="mailto:your@email.com">your@email.com</a>
-                    <a href="https://github.com/USERNAME" target="_blank" rel="noreferrer">github.com/USERNAME</a>
+                    <a href="mailto:mr.deusvult@gmail.com">mr.deusvult@gmail.com</a>
+                    <a href="https://github.com/deusvu1t" target="_blank" rel="noreferrer">github.com/deusvu1t</a>
                 </div>
             </div>
         </section>
