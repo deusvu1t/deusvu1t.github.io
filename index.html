@@ -1,43 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>QA Engineer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио Юрия, QA Engineer: manual testing, API/UI automation, Python, Playwright, Pytest.">
+    <title>Юрий | QA Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="page-shell">
+    <header class="hero">
+        <nav class="topbar">
+            <a class="brand" href="#top">Yuri QA</a>
+            <div class="nav-links">
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#stack">Стек</a>
+                <a href="#contact">Контакты</a>
+            </div>
+        </nav>
 
-<header>
-    <h1>Юрий — QA Engineer</h1>
-    <p>Manual + AQA | Python | Playwright</p>
-</header>
+        <div class="hero-grid" id="top">
+            <div class="hero-copy">
+                <p class="eyebrow">QA ENGINEER PORTFOLIO</p>
+                <h1>Тестирую продукт так, чтобы релизы проходили спокойнее.</h1>
+                <p class="hero-text">
+                    Я QA Engineer с фокусом на ручное тестирование, API/UI автотесты и понятные
+                    процессы проверки качества. Работаю с Python, Pytest, Playwright и Postman.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Смотреть проекты</a>
+                    <a class="button button-secondary" href="mailto:your@email.com">Написать мне</a>
+                </div>
+            </div>
 
-<section>
-    <h2>🚀 About Me</h2>
-    <p>Начинающий QA Engineer с опытом автотестирования API и UI.</p>
-</section>
+            <aside class="hero-card">
+                <p class="card-label">Текущий фокус</p>
+                <ul class="focus-list">
+                    <li>UI и API автотесты</li>
+                    <li>Регресс, smoke, чек-листы</li>
+                    <li>Python + Playwright + Pytest</li>
+                </ul>
+                <div class="stats">
+                    <div>
+                        <span class="stat-value">Manual</span>
+                        <span class="stat-label">Web / API testing</span>
+                    </div>
+                    <div>
+                        <span class="stat-value">AQA</span>
+                        <span class="stat-label">Pytest / Playwright</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
 
-<section>
-    <h2>📂 Projects</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/USERNAME/qa-portfolio">QA Portfolio</a>
-        </li>
-        <li>
-            <a href="#">API Tests (Pytest)</a>
-        </li>
-    </ul>
-</section>
+    <main>
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="section-kicker">Обо мне</p>
+                <h2>Качество для меня это не формальность, а предсказуемый результат.</h2>
+            </div>
+            <div class="about-grid">
+                <article class="panel">
+                    <p>
+                        Ищу и описываю дефекты так, чтобы разработчику было легко воспроизвести проблему,
+                        а команде было понятно ее влияние на продукт.
+                    </p>
+                </article>
+                <article class="panel">
+                    <p>
+                        Умею писать тест-кейсы, чек-листы, проводить регресс, проверять API и автоматизировать
+                        повторяющиеся сценарии на Python.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-<section>
-    <h2>🛠 Tech Stack</h2>
-    <p>Python, Pytest, Selenium, Playwright, Postman</p>
-</section>
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-kicker">Проекты</p>
+                <h2>Примеры того, как я оформляю и автоматизирую проверку качества.</h2>
+            </div>
+            <div class="cards">
+                <article class="project-card">
+                    <p class="project-type">Portfolio Repo</p>
+                    <h3>QA Portfolio</h3>
+                    <p>Подборка тестовой документации, примеров баг-репортов и структуры QA-артефактов.</p>
+                    <a href="https://github.com/USERNAME/qa-portfolio" target="_blank" rel="noreferrer">Открыть GitHub</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-type">Automation</p>
+                    <h3>API Tests on Pytest</h3>
+                    <p>Набор API-автотестов с проверкой статусов, схем ответов и негативных сценариев.</p>
+                    <a href="#">Добавить ссылку на проект</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-type">UI Testing</p>
+                    <h3>Playwright UI Checks</h3>
+                    <p>Сценарии для smoke и critical path, которые можно запускать перед релизом.</p>
+                    <a href="#">Добавить ссылку на проект</a>
+                </article>
+            </div>
+        </section>
 
-<section>
-    <h2>📫 Contact</h2>
-    <p>Email: your@email.com</p>
-</section>
+        <section class="section" id="stack">
+            <div class="section-heading">
+                <p class="section-kicker">Стек</p>
+                <h2>Инструменты, с которыми я работаю.</h2>
+            </div>
+            <div class="stack-list">
+                <span>Python</span>
+                <span>Pytest</span>
+                <span>Playwright</span>
+                <span>Selenium</span>
+                <span>Postman</span>
+                <span>DevTools</span>
+                <span>SQL basics</span>
+                <span>Git / GitHub</span>
+            </div>
+        </section>
 
+        <section class="section" id="contact">
+            <div class="contact-banner">
+                <div>
+                    <p class="section-kicker">Контакты</p>
+                    <h2>Если нужен QA для тестирования продукта или автотестов, можно связаться со мной.</h2>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:your@email.com">your@email.com</a>
+                    <a href="https://github.com/USERNAME" target="_blank" rel="noreferrer">github.com/USERNAME</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
 </body>
 </html>
